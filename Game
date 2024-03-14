@@ -1,0 +1,22 @@
+s = input("How many deep safties are there? (1 or 2)")
+
+
+
+def saftey_check():
+    if s == "1" :
+        c = input("What is alignment of slot corner? (o for outside, e for even, i for inside)")
+        if c == "o":
+            print("Cover 3 Zone, the best way to beat this is targeting the seam routes; area in between the side and middle safties.")
+        else:
+            print("Cover 1 Man, the best way to beat this is running crossing routes; the conerbacks are likely to get confused.")
+    elif s == "2":
+        o = input("What is alignment of outside corner? (o for outside, e for even, i for inside)")
+        if o == "o":
+            print("Cover 2 Zone, the most effective way to beat this defense is to flood on side of the field; corner and fly combo routes have a high chance of getting open.")
+        elif o == "e":
+            print("Cover 4 Defense, the area to target here is the flats, because the defense is to prevent deep passes.")
+        else:
+            print ("Cover 2 Man, the idea here is to create a mismatch, the Texas play is suggested, you can also use any plays that work with Cover 1 Man")
+        
+saftey_check()
+
